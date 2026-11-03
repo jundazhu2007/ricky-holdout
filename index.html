@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RICKY 釘子戶生存倒數</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>⚠ 4G 即將關台 ⚠ 釘子戶警報 ⚠ RICKY 的設備仍在服役 ⚠ 倒數持續進行中 ⚠ 4G 即將關台 ⚠ 釘子戶警報 ⚠ RICKY 的設備仍在服役 ⚠ 倒數持續進行中 </span>
+    <span>⚠ 4G 即將關台 ⚠ 釘子戶警報 ⚠ RICKY 的設備仍在服役 ⚠ 倒數持續進行中 ⚠ 4G 即將關台 ⚠ 釘子戶警報 ⚠ RICKY 的設備仍在服役 ⚠ 倒數持續進行中 </span>
+  </div>
+</div>
+
+<header class="head">
+  <p class="eyebrow">EMERGENCY COUNTDOWN SYSTEM</p>
+  <h1>RICKY 釘子戶生存倒數</h1>
+  <p class="clock">現在時間(台北) <time id="now">--</time></p>
+</header>
+
+<main>
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <p class="alert-badge">⚠ 警報</p>
+    <h2 id="hero-title">距離 4G 關台</h2>
+    <div class="timer timer-xl" id="hero-timer" role="timer" aria-live="off"></div>
+    <p class="meta" id="hero-meta"></p>
+  </section>
+
+  <section class="grid" id="grid" aria-label="設備清單"></section>
+</main>
+
+<footer class="foot">
+  <p>「停止支援」的定義因設備而異,每張卡片都註明依據。標示「約略 / 假設 / [uncertain]」的日期尚未取得官方確認,可在 app.js 頂端的 CONFIG 修改。</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
